@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio - Home</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <!-- Internal CSS -->
+  <style>
+    /* General reset */
+    * {
+      margin: 0; padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    /* Navbar */
+    .navigation {
+      height: 20vh;
+      background-color: #000000;
+    }
+
+    /* Home Section */
+    .home {
+      background-image: url("https://static.vecteezy.com/system/resources/thumbnails/011/004/883/small_2x/triangular-abstract-with-security-symbol-circuit-board-modern-future-website-background-or-cover-page-for-technology-and-finance-concept-and-education-future-company-vector.jpg");
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+    }
+    .name {
+      color: white;
+      padding-top: 40vh;
+      font-size: 50px;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px #000000;
+    }
+    .intro {
+      color: white;
+      font-size: 20px;
+      text-shadow: 2px 2px 4px #000000;
+    }
+
+    /* About Section */
+    .about {
+      background-image: url("https://images.freecreatives.com/wp-content/uploads/2016/04/Website-Backgrounds-For-Desktop.jpg");
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      color: white;
+      height: 100vh;
+      text-align: center;
+    }
+    .about img {
+      width: 180px;
+      border-radius: 50%;
+    }
+
+    /* Certificates */
+    .cirtificate {
+      background-image: url("https://images.freecreatives.com/wp-content/uploads/2016/04/Website-Backgrounds-For-Desktop.jpg");
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      color: white;
+      padding: 3rem;
+    }
+    .cirtificate-title {
+      margin-bottom: 2rem;
+    }
+    .cirtificate-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .cirtificate-item img {
+      width: 250px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    /* Resume */
+    .resume {
+      background-color: #000000;
+      text-align: center;
+      color: white;
+      padding: 3rem;
+    }
+    .resume img {
+      width: 60%;
+      border-radius: 10px;
+    }
+
+    /* Contact */
+    .contact {
+      background-color: #f4f4f4;
+      color: #ff9800;
+      text-decoration: none;
+      padding: 3rem;
+      text-align: center;
+    }
+    .contact a {
+      color: #ff9800;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="SectionHome">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navigation">
+      <a class="navbar-brand" href="#">My Portfolio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" 
+              data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#SectionHome">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#SectionCirtificate">Certificate</a></li>
+          <li class="nav-item"><a class="nav-link" href="#SectionResume">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Home -->
+    <div class="home">
+      <h1 class="name">Arun Murugasan</h1>
+      <p class="intro">B.Tech Artificial Intelligence and Data Science </br> At MAM School of Engineering</p>
+    </div>
+  </div>
+
+  <!-- About -->
+  <div id="about">
+    <section class="about">
+      <h2>About Me</h2>
+      <a href="https://ibb.co/0yMf0gCQ"><img src="https://i.ibb.co/gZTD05S6/IMG-20250125-165528-515.webp" alt="Profile" /></a>
+      <div>
+        <ul>
+          <li><strong>Name:</strong> Arun M</li>
+          <li><strong>Age:</strong> 19</li>
+          <li><strong>Date of Birth:</strong> 20/10/2005</li>
+          <li><strong>Skills:</strong> HTML, CSS, JavaScript, SQL</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <!-- Certificates -->
+  <div id="SectionCirtificate">
+    <div class="cirtificate">
+      <h1>My Certificates</h1>
+      <div class="cirtificate-list">
+        <div class="cirtificate-item">
+          <a href="https://ibb.co/rGG0r1rb"><img src="https://i.ibb.co/fYYFwPw8/Screenshot-20240611-201104-Chrome.png" alt="AWS" /></a> 
+          <h3 class="cirtificate-name">AWS Mega Workshop</h3>
+        </div>
+        <div class="cirtificate-item">
+          <a href="https://ibb.co/v7yJGGm"><img src="https://i.ibb.co/8Wvjpp2/IMG-20240703-WA0006.jpg" alt="Digilabs" /></a>       
+          <h3 class="cirtificate-name">Digilabs</h3>
+        </div>
+        <div class="cirtificate-item">
+          <a href="https://ibb.co/Kc2cRPK6"><img src="https://i.ibb.co/bjsjq0b1/Screenshot-20241127-160909-Microsoft-365-Office.png" alt="MongoDB" /></a>        
+          <h3 class="cirtificate-name">MongoDB</h3>
+        </div>
+        <div class="cirtificate-item">
+          <a href="https://ibb.co/Pv3WFpqZ"><img src="https://i.ibb.co/wF3QBH5N/Screenshot-20250114-100023-Microsoft-365-Office.png" alt="Certificate" /></a>        
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Resume -->
+  <div id="SectionResume" class="resume">
+    <h1>My Resume</h1>
+    <a href="https://ibb.co/rKNJt1RD"><img src="https://i.ibb.co/MyQLh3xF/IMG-20250824-WA0004.jpg" alt="Resume"></a>
+  </div>
+
+  <!-- Contact -->
+  <div id="contact">
+    <section class="contact">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:aids2023.arunm@gmail.com">aids2023.arunm@email.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/arun-m-undefined-263a3b2b2" target="_blank">My LinkedIn</a></p>
+      <p>GitHub: <a href="https://github.com/yourusername" target="_blank">My GitHub</a></p>
+    </section>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+          integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" 
+          integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
+          integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
